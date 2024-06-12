@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page 1</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">          
+
+            <div class="navbar-left">
+                <button class="menu-toggle">&#9776;</button>
+            </div>
+               
+            <div class="navbar-center">
+                <ul class="nav-list">
+                    <li><a href="admin_email.html">Appointment</a></li>
+                    <li><a href="admin_dashboard.html">Client</a></li> 
+                    <li><a href="chat1.html">Message</a></li>
+                </ul>
+            </div>
+            <script src="script.js"></script>
+            <div class="navbar-right">
+                <span class="account-name">Admin</span>
+                <div class="account-icon"></div>
+                  <a href="login.html" id="logoutButton">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <div class="chat-container">
+        <div class="chat-list">
+            <input type="text" placeholder="Search" class="search-input">
+            <div class="contact">John</div>
+            <div class="contact">Mary</div>
+            <div class="contact">David</div>
+            <div class="contact">Balmond</div>
+        </div>
+        <div class="chat-box">
+            <div id="chat">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="input-container">
+                <input type="text" id="messageInput" placeholder="Message">
+                <button onclick="sendMessage()">Send</button>
+                <button onclick="clearChat()">Clear</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="page1.js"></script>
+</body>
+</html>

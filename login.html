@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Purrfect Paws</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="login-form">
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Purrfect Paws Veterinary Clinic</p>
+    </footer>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Assuming validation is done here
+            // Redirect to dashboard
+            window.location.href = 'dashb.html';
+        });
+    </script>
+</body>
+</html>
+

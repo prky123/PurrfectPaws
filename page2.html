@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page 2</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <button class="menu-toggle">&#9776;</button>
+            </div>
+            <div class="navbar-center">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="appointment.html">Appointment</a></li> 
+                    <li><a href="chat2.html">Message</a></li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <span class="account-name">User</span>
+                <div class="account-icon"></div>
+                <a href="login.html" id="logoutButton">Logout</a>              
+            </div>
+        </nav>
+    </header>
+    <div class="chat-container">
+        <div class="chat-list">
+            <input type="text" placeholder="Search" class="search-input">
+            <div class="contact">Doc Marc</div>
+            <div class="contact">Doc Jake</div>
+            <div class="contact">Doc Andrei</div>
+            <div class="contact">Doc Shara</div>
+        </div>
+        <div class="chat-box">
+            <div id="chat">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="input-container">
+                <input type="text" id="messageInput" placeholder="Message">
+                <button onclick="sendMessage()">Send</button>
+                <button onclick="clearChat()">Clear</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="page2.js"></script>
+</body>
+</html>

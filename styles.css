@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+.field input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"], button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.chatbox-container {
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.chatbox-header {
+    background-color: #5cb85c;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.chatbox-content {
+    height: 300px;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.chatbox-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.chatbox-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.chatbox-input button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.chatbox-input button:hover {
+    background-color: #4cae4c;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.message.user {
+    background-color: #e9f5e9;
+    align-self: flex-end;
+}
+
+.message.admin {
+    background-color: #e9ecf5;
+    align-self: flex-start;
+}

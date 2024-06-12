@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Purrfect Paws</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <ul>
+                <!-- You can add navigation items here if needed -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="login-form">
+            <div class="field">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+        <script>
+            document.getElementById('login-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                // Simple authentication logic for demonstration
+                if (username === 'admin' && password === 'password') {
+                    localStorage.setItem('isLoggedIn', 'true');
+                    window.location.href = 'admin_dashboard.html';
+                } else {
+                    alert('Invalid username or password');
+                }
+            });
+        </script>
+    </main>
+</body>
+</html>

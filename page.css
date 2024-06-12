@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #e74c3c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.navbar span {
+    margin: 0 10px;
+}
+
+.admin-logout {
+    display: flex;
+    align-items: center;
+}
+
+.admin-logout button {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.chat-container {
+    display: flex;
+    height: calc(100vh - 50px); /* Adjust height based on navbar */
+}
+
+.chat-list {
+    width: 200px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.search-input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.contact {
+    background-color: #34495e;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.chat-box {
+    flex-grow: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#chat {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sent {
+    background-color: yellow;
+    align-self: flex-end;
+}
+
+.received {
+    background-color: lightgrey;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+#messageInput {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+header {
+    background-color: #ff4b4b;
+    padding: 10px 0;
+    position: relative;
+}
+.services-section{
+    width: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-left {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  
+}
+
+.menu-toggle {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    align-self: auto;
+    
+}
+
+.navbar-center .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-center .nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account-name {
+    color: white;
+    font-size: 14px;
+}
+
+.account-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #ff4b4b;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+main h1 {
+    font-size: 36px;
+    color: #000000;
+    margin-top: 50px;
+}
